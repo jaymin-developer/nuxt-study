@@ -1,27 +1,14 @@
 <template>
   <div>
-    <header class="title">
-      <NuxtLink class="logo" to="/">Nuxt Shopping</NuxtLink>
-    </header>
+    <AppHeader />
     <Nuxt />
   </div>
 </template>
 
 <script>
-export default {}
-</script>
+import AppHeader from '@/components/AppHeader.vue'
 
-<style scoped>
-header {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
+export default {
+  components: { AppHeader },
 }
-.logo {
-  font-weight: 900;
-}
-.logo:visited {
-  color: inherit;
-}
-</style>
+</script>
